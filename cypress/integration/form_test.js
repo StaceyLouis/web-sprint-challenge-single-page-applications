@@ -13,7 +13,8 @@ describe('test inputs and submit form', function(){
     cy.get('[type="checkbox"]')
     .check()
     .should('be.checked')
-    cy.get("button")
+    cy.get("button[id='addTo']")
     .click()
+    
    })
 });

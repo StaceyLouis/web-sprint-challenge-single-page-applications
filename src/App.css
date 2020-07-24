@@ -23,7 +23,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+#home {
+  text-decoration:none;
+  font-size: 2rem;
+  text-align: center;
+  background-color:  red;
+  color: white;
+  border-radius: 5px;
+  margin-top: 1%;
 
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +44,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.jumbotron{
+  background-image: url('./components/pizza.jpg');
+  background-attachment: fixed;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  width: 100%;
+  background-color: rgb(192, 187, 187);
+}
+button{
+  font-size: 2rem;
+  padding: 3%;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+
 }

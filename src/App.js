@@ -5,7 +5,7 @@ import axios from 'axios'
 import * as yup from 'yup'
 import formSchema from './validation/formSchema'
 import Submission from './components/submission'
-import {Switch, Link, Route, useHistory} from 'react-router-dom'
+import {Switch, Route, useHistory} from 'react-router-dom'
 
 
 const initialFormValues= {
@@ -38,6 +38,10 @@ const postPizza = newPizza => {
         setPizza([res.data, ...pizza]);
         setForm(initialFormValues)
         history.push('/thanks');
+        setTimeout(function() {
+          history.push('/')
+        },4000);
+       
       })
       .catch(err => {
         console.log(err)
@@ -107,9 +111,7 @@ const postPizza = newPizza => {
 
   return (
     <>
-     <Link to='/' id="home">Home</Link>
         
-
 
         <Switch>
           <Route path='/thanks'>

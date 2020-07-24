@@ -9,6 +9,7 @@ function Home() {
     
     <Link to='/pizza'><button>Click to Order!</button></Link>
             </div>
+           
         </div>
     )
 }

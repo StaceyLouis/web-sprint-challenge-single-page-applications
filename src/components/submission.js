@@ -2,8 +2,8 @@ import React from 'react'
 
 
 
-function Submission(props) {
-console.log(props)
+function Submission() {
+
    
     return(
         <div className="nav">

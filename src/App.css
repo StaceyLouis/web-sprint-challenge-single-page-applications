@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.jumbotron{
+  background-image: url('./components/pizza.jpg');
+  background-attachment: fixed;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  width: 100%;
+  background-color: rgb(192, 187, 187);
+}
